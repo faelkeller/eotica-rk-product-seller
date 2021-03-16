@@ -1,9 +1,17 @@
 <?xml version="1.0" ?>
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
-    <route method="POST" url="/V1/rkeller-product-seller">
+    <route method="POST" url="/V1/productSeller">
         <service class="Rkeller\ProductSeller\Api\ProductSellerRepositoryInterface" method="save" />
         <resources>
             <resource ref="anonymous"/>
         </resources>
     </route>
+
+    <route url="/V1/productSeller/search" method="GET">
+        <service class="Rkeller\ProductSeller\Api\ProductSellerRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
 </routes>

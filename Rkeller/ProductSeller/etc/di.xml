@@ -3,5 +3,6 @@
     <preference for="Rkeller\ProductSeller\Api\ProductSellerRepositoryInterface"
                 type="Rkeller\ProductSeller\Model\ResourceModel\ProductSellerRepository" />
     <preference for="Rkeller\ProductSeller\Api\Data\ProductSellerInterface" type="Rkeller\ProductSeller\Model\Data\ProductSeller" />
-
+    <preference for="Rkeller\ProductSeller\Api\Data\ProductSellerSearchResultsInterface"
+                type="Rkeller\ProductSeller\Model\ProductSellerSearchResults" />
 </config>
