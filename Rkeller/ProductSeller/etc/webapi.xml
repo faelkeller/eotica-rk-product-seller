@@ -3,14 +3,14 @@
     <route method="POST" url="/V1/productSeller">
         <service class="Rkeller\ProductSeller\Api\ProductSellerRepositoryInterface" method="save" />
         <resources>
-            <resource ref="anonymous"/>
+            <resource ref="Rkeller_ProductSeller::create"/>
         </resources>
     </route>
 
     <route url="/V1/productSeller/search" method="GET">
         <service class="Rkeller\ProductSeller\Api\ProductSellerRepositoryInterface" method="getList"/>
         <resources>
-            <resource ref="anonymous"/>
+            <resource ref="Rkeller_ProductSeller::list"/>
         </resources>
     </route>
 
