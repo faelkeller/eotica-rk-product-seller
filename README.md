@@ -1,6 +1,6 @@
 This module was built with Magento 2.4.0 for pratice test of Eótica company.
 
-<b>Example GET request for create product seller</b>
+<b>Example POST request for create product seller</b>
 
 
 http://host/rest/default/V1/productSeller/
