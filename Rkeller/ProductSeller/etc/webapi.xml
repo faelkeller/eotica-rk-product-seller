@@ -14,4 +14,11 @@
         </resources>
     </route>
 
+    <route url="/V1/productSeller/:id" method="PUT">
+        <service class="Rkeller\ProductSeller\Api\ProductSellerRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Rkeller_ProductSeller::update"/>
+        </resources>
+    </route>
+
 </routes>

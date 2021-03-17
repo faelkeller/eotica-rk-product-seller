@@ -6,6 +6,7 @@
                 <resource id="Rkeller_ProductSeller::product_seller" title="Product Seller" sortOrder="100" >
                     <resource id="Rkeller_ProductSeller::create" title="Create" sortOrder="10" />
                     <resource id="Rkeller_ProductSeller::list" title="List" sortOrder="20" />
+                    <resource id="Rkeller_ProductSeller::update" title="List" sortOrder="30" />
                 </resource>
             </resource>
         </resources>
